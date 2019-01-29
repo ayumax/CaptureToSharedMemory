@@ -13,7 +13,13 @@
                              Storyboard.TargetProperty="(Canvas.Left)"
                              To="600"
                              Duration="0:0:2"
-                             RepeatBehavior="Forever"/>     
+                             RepeatBehavior="Forever"/>
+            <DoubleAnimation Storyboard.TargetName="ellipse"
+                             Storyboard.TargetProperty="(Canvas.Top)"
+                             To="400"
+                             Duration="0:0:1"
+                             AutoReverse="True"
+                             RepeatBehavior="Forever"/>
         </Storyboard>
     </Window.Resources>
     <Window.Triggers>
@@ -27,5 +33,10 @@
                 <SolidColorBrush Color="Red" />
             </Rectangle.Fill>
         </Rectangle>
+        <Ellipse Name="ellipse" Height="50" Width="50" Canvas.Top="0" Canvas.Left="300" >
+            <Ellipse.Fill>
+                <SolidColorBrush Color="Blue" />
+            </Ellipse.Fill>
+        </Ellipse>
     </Canvas>
 </Window>
