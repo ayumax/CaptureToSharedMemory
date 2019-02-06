@@ -27,8 +27,8 @@
             <BeginStoryboard Storyboard="{StaticResource rectAnimation}" />
         </EventTrigger>
     </Window.Triggers>
-    <Canvas Name="Root" Height="450" Width="800" Background="White" ClipToBounds="True">
-        <Rectangle Name="rect" Canvas.Left="0" Canvas.Top="100" Width="200" Height="100" >
+    <Canvas Name="Root" Height="450" Width="800" Background="Gray" ClipToBounds="True">
+        <Rectangle Name="rect" Canvas.Left="51" Canvas.Top="137" Width="200" Height="100" >
             <Rectangle.Fill>
                 <SolidColorBrush Color="Red" />
             </Rectangle.Fill>
@@ -38,5 +38,8 @@
                 <SolidColorBrush Color="Blue" />
             </Ellipse.Fill>
         </Ellipse>
+
+        <TextBox Width="702" Height="155" AcceptsReturn="True"
+                 Canvas.Left="51" Canvas.Top="282" FontSize="40"/>
     </Canvas>
 </Window>
